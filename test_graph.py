@@ -6,7 +6,7 @@ def main():
     app = build_graph()
     
     print("\n" + "="*50)
-    print("Welcome to Trade Today CLI")
+    print("Welcome to TradeU CLI")
     print("="*50)
     
     query = 'Should I buy RELIANCE.NS?'

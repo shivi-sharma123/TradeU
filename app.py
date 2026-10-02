@@ -5,8 +5,8 @@ from core.classifier import classify_intent, extract_tickers
 from crew.portfolio_crew import run_compare_stocks_crew, run_portfolio_crew
 
 # --- Setup Streamlit Page ---
-st.set_page_config(page_title="Trade Today AI", layout="wide", page_icon="📈")
-st.title("📈 Trade Today - AI Trading Swarm")
+st.set_page_config(page_title="TradeU AI", layout="wide", page_icon="📈")
+st.title("📈 TradeU - AI Trading Swarm")
 
 # --- Sidebar ---
 with st.sidebar:

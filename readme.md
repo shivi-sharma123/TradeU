@@ -1,6 +1,6 @@
-# Trade Today
+# TradeU
 
-Trade Today is an Indian equity analysis app built around two execution paths:
+TradeU is an Indian equity analysis app built around two execution paths:
 
 - `LangGraph` for single-stock analysis such as `Should I buy RELIANCE.NS today?`
 - `CrewAI` for multi-stock workflows such as stock comparison and portfolio analysis

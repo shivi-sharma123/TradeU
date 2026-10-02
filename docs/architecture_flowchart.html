@@ -1,91 +1,112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trade Today - Complete Architecture Flowchart</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TradeU - Complete Architecture Flowchart</title>
     <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background: #0d1117;
-            color: #c9d1d9;
-            padding: 20px;
-        }
-        h1 {
-            text-align: center;
-            font-size: 28px;
-            margin: 20px 0;
-            color: #58a6ff;
-        }
-        h2 {
-            font-size: 22px;
-            margin: 30px 0 15px;
-            color: #79c0ff;
-            border-bottom: 1px solid #30363d;
-            padding-bottom: 8px;
-        }
-        .section {
-            background: #161b22;
-            border: 1px solid #30363d;
-            border-radius: 12px;
-            padding: 24px;
-            margin: 20px auto;
-            max-width: 1400px;
-        }
-        .mermaid {
-            display: flex;
-            justify-content: center;
-            margin: 10px 0;
-        }
-        .mermaid svg {
-            max-width: 100%;
-        }
-        .legend {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 16px;
-            justify-content: center;
-            margin: 15px 0;
-        }
-        .legend-item {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            font-size: 13px;
-        }
-        .legend-color {
-            width: 16px;
-            height: 16px;
-            border-radius: 4px;
-        }
-        .note {
-            font-size: 13px;
-            color: #8b949e;
-            text-align: center;
-            margin-top: 10px;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: #0d1117;
+        color: #c9d1d9;
+        padding: 20px;
+      }
+      h1 {
+        text-align: center;
+        font-size: 28px;
+        margin: 20px 0;
+        color: #58a6ff;
+      }
+      h2 {
+        font-size: 22px;
+        margin: 30px 0 15px;
+        color: #79c0ff;
+        border-bottom: 1px solid #30363d;
+        padding-bottom: 8px;
+      }
+      .section {
+        background: #161b22;
+        border: 1px solid #30363d;
+        border-radius: 12px;
+        padding: 24px;
+        margin: 20px auto;
+        max-width: 1400px;
+      }
+      .mermaid {
+        display: flex;
+        justify-content: center;
+        margin: 10px 0;
+      }
+      .mermaid svg {
+        max-width: 100%;
+      }
+      .legend {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: center;
+        margin: 15px 0;
+      }
+      .legend-item {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 13px;
+      }
+      .legend-color {
+        width: 16px;
+        height: 16px;
+        border-radius: 4px;
+      }
+      .note {
+        font-size: 13px;
+        color: #8b949e;
+        text-align: center;
+        margin-top: 10px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <h1>TradeU - Complete System Architecture</h1>
 
-<h1>Trade Today - Complete System Architecture</h1>
-
-<!-- ============================================ -->
-<!-- SECTION 1: HIGH-LEVEL SYSTEM OVERVIEW -->
-<!-- ============================================ -->
-<div class="section">
-    <h2>1. High-Level System Overview</h2>
-    <div class="legend">
-        <div class="legend-item"><div class="legend-color" style="background:#2ea043"></div> User Interfaces</div>
-        <div class="legend-item"><div class="legend-color" style="background:#1f6feb"></div> Routing & Orchestration</div>
-        <div class="legend-item"><div class="legend-color" style="background:#8957e5"></div> LangGraph Pipeline</div>
-        <div class="legend-item"><div class="legend-color" style="background:#da3633"></div> CrewAI Crew</div>
-        <div class="legend-item"><div class="legend-color" style="background:#d29922"></div> External APIs & Tools</div>
-        <div class="legend-item"><div class="legend-color" style="background:#388bfd"></div> Automation & Storage</div>
-    </div>
-    <pre class="mermaid">
+    <!-- ============================================ -->
+    <!-- SECTION 1: HIGH-LEVEL SYSTEM OVERVIEW -->
+    <!-- ============================================ -->
+    <div class="section">
+      <h2>1. High-Level System Overview</h2>
+      <div class="legend">
+        <div class="legend-item">
+          <div class="legend-color" style="background: #2ea043"></div>
+          User Interfaces
+        </div>
+        <div class="legend-item">
+          <div class="legend-color" style="background: #1f6feb"></div>
+          Routing & Orchestration
+        </div>
+        <div class="legend-item">
+          <div class="legend-color" style="background: #8957e5"></div>
+          LangGraph Pipeline
+        </div>
+        <div class="legend-item">
+          <div class="legend-color" style="background: #da3633"></div>
+          CrewAI Crew
+        </div>
+        <div class="legend-item">
+          <div class="legend-color" style="background: #d29922"></div>
+          External APIs & Tools
+        </div>
+        <div class="legend-item">
+          <div class="legend-color" style="background: #388bfd"></div>
+          Automation & Storage
+        </div>
+      </div>
+      <pre class="mermaid">
     flowchart TB
         subgraph UI["User Interfaces"]
             style UI fill:#0d2818,stroke:#2ea043,color:#fff
@@ -157,14 +178,14 @@
         API --> SQL
         GS -->|"Watchlist tickers"| N8N
     </pre>
-</div>
+    </div>
 
-<!-- ============================================ -->
-<!-- SECTION 2: INTENT CLASSIFICATION & ROUTING -->
-<!-- ============================================ -->
-<div class="section">
-    <h2>2. Intent Classification & Query Routing</h2>
-    <pre class="mermaid">
+    <!-- ============================================ -->
+    <!-- SECTION 2: INTENT CLASSIFICATION & ROUTING -->
+    <!-- ============================================ -->
+    <div class="section">
+      <h2>2. Intent Classification & Query Routing</h2>
+      <pre class="mermaid">
     flowchart LR
         Q["User Query<br/>(free text)"] --> CLS["classify_intent()<br/>Gemini @ 0.0 temp"]
 
@@ -198,14 +219,14 @@
         style Q3 fill:#161b22,stroke:#30363d,color:#8b949e
         style Q4 fill:#161b22,stroke:#30363d,color:#8b949e
     </pre>
-</div>
+    </div>
 
-<!-- ============================================ -->
-<!-- SECTION 3: LANGGRAPH SINGLE-STOCK PIPELINE -->
-<!-- ============================================ -->
-<div class="section">
-    <h2>3. LangGraph Single-Stock Analysis Pipeline</h2>
-    <pre class="mermaid">
+    <!-- ============================================ -->
+    <!-- SECTION 3: LANGGRAPH SINGLE-STOCK PIPELINE -->
+    <!-- ============================================ -->
+    <div class="section">
+      <h2>3. LangGraph Single-Stock Analysis Pipeline</h2>
+      <pre class="mermaid">
     flowchart TB
         START(["START"]) --> SUP
 
@@ -266,14 +287,14 @@
         style START fill:#2ea043,stroke:#2ea043,color:#fff
         style END_NODE fill:#da3633,stroke:#da3633,color:#fff
     </pre>
-</div>
+    </div>
 
-<!-- ============================================ -->
-<!-- SECTION 4: CREWAI MULTI-STOCK PIPELINE -->
-<!-- ============================================ -->
-<div class="section">
-    <h2>4. CrewAI Multi-Stock Analysis Pipeline</h2>
-    <pre class="mermaid">
+    <!-- ============================================ -->
+    <!-- SECTION 4: CREWAI MULTI-STOCK PIPELINE -->
+    <!-- ============================================ -->
+    <div class="section">
+      <h2>4. CrewAI Multi-Stock Analysis Pipeline</h2>
+      <pre class="mermaid">
     flowchart TB
         INPUT["Tickers: RELIANCE.NS, TCS.NS, INFY.NS<br/>+ User Query"] --> T1
 
@@ -316,14 +337,14 @@
         style INPUT fill:#1a1a2e,stroke:#58a6ff,color:#fff
         style OUTPUT fill:#2ea043,stroke:#2ea043,color:#fff
     </pre>
-</div>
+    </div>
 
-<!-- ============================================ -->
-<!-- SECTION 5: CREWAI TOOLS BRIDGE -->
-<!-- ============================================ -->
-<div class="section">
-    <h2>5. CrewAI Tools &rarr; Existing System Bridge</h2>
-    <pre class="mermaid">
+    <!-- ============================================ -->
+    <!-- SECTION 5: CREWAI TOOLS BRIDGE -->
+    <!-- ============================================ -->
+    <div class="section">
+      <h2>5. CrewAI Tools &rarr; Existing System Bridge</h2>
+      <pre class="mermaid">
     flowchart LR
         subgraph CREWAI_TOOLS["CrewAI @tool Wrappers"]
             style CREWAI_TOOLS fill:#2d1117,stroke:#da3633,color:#fff
@@ -361,15 +382,16 @@
         PM --> YF
         GF --> YF
         SD --> YF
-    </pre>
-</div>
+    </pre
+      >
+    </div>
 
-<!-- ============================================ -->
-<!-- SECTION 6: FASTAPI ENDPOINTS -->
-<!-- ============================================ -->
-<div class="section">
-    <h2>6. FastAPI Endpoints</h2>
-    <pre class="mermaid">
+    <!-- ============================================ -->
+    <!-- SECTION 6: FASTAPI ENDPOINTS -->
+    <!-- ============================================ -->
+    <div class="section">
+      <h2>6. FastAPI Endpoints</h2>
+      <pre class="mermaid">
     flowchart LR
         subgraph ENDPOINTS["FastAPI :8000"]
             style ENDPOINTS fill:#0d1d38,stroke:#1f6feb,color:#fff
@@ -402,14 +424,14 @@
 
         style H fill:#0d2818,stroke:#2ea043,color:#8b949e
     </pre>
-</div>
+    </div>
 
-<!-- ============================================ -->
-<!-- SECTION 7: N8N WORKFLOW -->
-<!-- ============================================ -->
-<div class="section">
-    <h2>7. n8n Daily Pre-Market Watchlist Scan Workflow</h2>
-    <pre class="mermaid">
+    <!-- ============================================ -->
+    <!-- SECTION 7: N8N WORKFLOW -->
+    <!-- ============================================ -->
+    <div class="section">
+      <h2>7. n8n Daily Pre-Market Watchlist Scan Workflow</h2>
+      <pre class="mermaid">
     flowchart TB
         SCHED["Schedule Trigger<br/>9:00 AM IST Daily"] --> SCAN
 
@@ -420,7 +442,7 @@
         IF -->|"YES"| FMT_ALERT["Format Alert Email<br/>(JavaScript)<br/>HTML with signal cards"]
         IF -->|"NO"| FMT_CLEAR["Format All-Clear Email<br/>(JavaScript)<br/>HTML with summary table"]
 
-        FMT_ALERT --> EMAIL1["Gmail Send<br/>anubhavkumarrao100@gmail.com<br/>Subject: Trade Today Alert"]
+        FMT_ALERT --> EMAIL1["Gmail Send<br/>anubhavkumarrao100@gmail.com<br/>Subject: TradeU Alert"]
         FMT_CLEAR --> EMAIL2["Gmail Send<br/>anubhavkumarrao100@gmail.com<br/>Subject: All Clear"]
 
         style SCHED fill:#2d2000,stroke:#d29922,color:#fff
@@ -431,14 +453,14 @@
         style EMAIL1 fill:#2d1117,stroke:#da3633,color:#fff
         style EMAIL2 fill:#0d2818,stroke:#2ea043,color:#fff
     </pre>
-</div>
+    </div>
 
-<!-- ============================================ -->
-<!-- SECTION 8: MCP INTEGRATIONS -->
-<!-- ============================================ -->
-<div class="section">
-    <h2>8. MCP Server Integrations</h2>
-    <pre class="mermaid">
+    <!-- ============================================ -->
+    <!-- SECTION 8: MCP INTEGRATIONS -->
+    <!-- ============================================ -->
+    <div class="section">
+      <h2>8. MCP Server Integrations</h2>
+      <pre class="mermaid">
     flowchart TB
         subgraph MCP["MCP Servers (.mcp.json)"]
             style MCP fill:#1a1a2e,stroke:#58a6ff,color:#fff
@@ -470,14 +492,14 @@
         SQL_TOOLS --> UC1 & UC2
         GS_TOOLS --> UC3 & UC4
     </pre>
-</div>
+    </div>
 
-<!-- ============================================ -->
-<!-- SECTION 9: DOCKER DEPLOYMENT -->
-<!-- ============================================ -->
-<div class="section">
-    <h2>9. Docker Compose Deployment</h2>
-    <pre class="mermaid">
+    <!-- ============================================ -->
+    <!-- SECTION 9: DOCKER DEPLOYMENT -->
+    <!-- ============================================ -->
+    <div class="section">
+      <h2>9. Docker Compose Deployment</h2>
+      <pre class="mermaid">
     flowchart TB
         subgraph DOCKER["docker-compose.yml"]
             style DOCKER fill:#1a1a2e,stroke:#58a6ff,color:#fff
@@ -514,14 +536,14 @@
         style ENV fill:#2d1117,stroke:#da3633,color:#fff
         style VOL fill:#1a0d2e,stroke:#8957e5,color:#fff
     </pre>
-</div>
+    </div>
 
-<!-- ============================================ -->
-<!-- SECTION 10: COMPLETE TECH STACK -->
-<!-- ============================================ -->
-<div class="section">
-    <h2>10. Complete Technology Stack</h2>
-    <pre class="mermaid">
+    <!-- ============================================ -->
+    <!-- SECTION 10: COMPLETE TECH STACK -->
+    <!-- ============================================ -->
+    <div class="section">
+      <h2>10. Complete Technology Stack</h2>
+      <pre class="mermaid">
     flowchart TB
         subgraph LAYER1["Presentation Layer"]
             style LAYER1 fill:#0d2818,stroke:#2ea043,color:#fff
@@ -577,35 +599,36 @@
         GSHEETS --> N8N
         N8N --> GMAIL
     </pre>
-</div>
+    </div>
 
-<p class="note">Generated for Trade Today AI Trading Swarm | Last updated: March 2026</p>
+    <p class="note">
+      Generated for TradeU AI Trading Swarm | Last updated: March 2026
+    </p>
 
-<script>
-    mermaid.initialize({
+    <script>
+      mermaid.initialize({
         startOnLoad: true,
-        theme: 'dark',
+        theme: "dark",
         themeVariables: {
-            darkMode: true,
-            background: '#161b22',
-            primaryColor: '#1f6feb',
-            primaryTextColor: '#c9d1d9',
-            primaryBorderColor: '#30363d',
-            lineColor: '#58a6ff',
-            secondaryColor: '#1a0d2e',
-            tertiaryColor: '#0d2818',
-            fontFamily: 'Segoe UI, Arial, sans-serif'
+          darkMode: true,
+          background: "#161b22",
+          primaryColor: "#1f6feb",
+          primaryTextColor: "#c9d1d9",
+          primaryBorderColor: "#30363d",
+          lineColor: "#58a6ff",
+          secondaryColor: "#1a0d2e",
+          tertiaryColor: "#0d2818",
+          fontFamily: "Segoe UI, Arial, sans-serif",
         },
         flowchart: {
-            useMaxWidth: true,
-            htmlLabels: true,
-            curve: 'basis',
-            padding: 20,
-            nodeSpacing: 50,
-            rankSpacing: 60
-        }
-    });
-</script>
-
-</body>
+          useMaxWidth: true,
+          htmlLabels: true,
+          curve: "basis",
+          padding: 20,
+          nodeSpacing: 50,
+          rankSpacing: 60,
+        },
+      });
+    </script>
+  </body>
 </html>
